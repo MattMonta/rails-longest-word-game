@@ -1,0 +1,14 @@
+<h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+
+<h1>Grid:</h1>
+
+<%= @letters %>
+
+
+<form action= '<%= score_path %>' >
+  <label for="question">Your word</label>
+  <input type="text" id="question" name="attempt" placeholder="Your try">
+  <input type="submit" value="Submit!">
+  <%= hidden_field_tag :letters, @letters %>
+</form>
